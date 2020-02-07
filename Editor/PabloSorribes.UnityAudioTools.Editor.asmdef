@@ -1,7 +1,7 @@
 {
     "name": "PabloSorribes.UnityAudioTools.Editor",
     "references": [
-        ""
+        "PabloSorribes.UnityAudioTools.Runtime"
     ],
     "includePlatforms": [
         "Editor"
