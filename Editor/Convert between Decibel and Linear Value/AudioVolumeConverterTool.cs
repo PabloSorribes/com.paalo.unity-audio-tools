@@ -6,14 +6,14 @@ namespace PabloSorribes.UnityAudioTools.Editor
 {
 	public class AudioVolumeConverterTool : EditorWindow
 	{
-		private const string menuItemPath = "PabloSorribes/Tools/Audio Volume Converter Tool";
-		private static readonly string myWindowTitle = "Audio Volume Converter Tool";
+		private const string menuItemPath = "Window/PabloSorribes/Tools/Audio Volume Converter Tool";
+		private static readonly string windowTitle = "Audio Volume Converter Tool";
 
 		[MenuItem(menuItemPath)]
 		public static void SetupWindow()
 		{
 			//Instantiate the window and set its size.
-			var window = GetWindow<AudioVolumeConverterTool>(utility: false, title: myWindowTitle, focus: true);
+			var window = GetWindow<AudioVolumeConverterTool>(utility: false, title: windowTitle, focus: true);
 			window.minSize = new Vector2(400, 65);
 			window.maxSize = new Vector2(window.minSize.x + 10, window.minSize.y + 10);
 			window.Show();
