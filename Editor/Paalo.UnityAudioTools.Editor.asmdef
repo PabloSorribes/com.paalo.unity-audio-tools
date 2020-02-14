@@ -1,7 +1,7 @@
 {
-    "name": "PabloSorribes.UnityAudioTools.Editor",
+    "name": "Paalo.UnityAudioTools.Editor",
     "references": [
-        "PabloSorribes.UnityAudioTools.Runtime"
+        "GUID:5ae10aa3990542440a16c579225cbe3d"
     ],
     "includePlatforms": [
         "Editor"
