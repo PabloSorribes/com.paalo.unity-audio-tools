@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace PabloSorribes.UnityAudioTools
+namespace Paalo.UnityAudioTools
 {
 	public static class AudioMiscHelper
 	{

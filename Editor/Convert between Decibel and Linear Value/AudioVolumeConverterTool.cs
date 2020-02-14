@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine.UIElements;
 
-namespace PabloSorribes.UnityAudioTools.Editor
+namespace Paalo.UnityAudioTools.Editor
 {
 	public class AudioVolumeConverterTool : EditorWindow
 	{

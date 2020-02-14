@@ -1,4 +1,4 @@
-﻿namespace PabloSorribes.UnityAudioTools
+﻿namespace Paalo.UnityAudioTools
 {
 	public class CoroutineCancellationToken
 	{

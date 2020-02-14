@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace PabloSorribes.UnityAudioTools
+namespace Paalo.UnityAudioTools
 {
 	/// <summary>
 	/// Useful component to set on a normal Unity Audio Source.

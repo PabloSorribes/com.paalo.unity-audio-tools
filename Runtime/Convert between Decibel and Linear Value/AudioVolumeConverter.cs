@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace PabloSorribes.UnityAudioTools
+namespace Paalo.UnityAudioTools
 {
 	/// <summary>
 	/// Helper class for helping to input Sound Designer-friendly Decibel values, 
