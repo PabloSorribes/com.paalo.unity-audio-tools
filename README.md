@@ -1,4 +1,4 @@
-# com.paalo.unity-audio-tools
+# Pablo's Unity Audio Tools
 Add this package to get more functionality for Unity's Built-In Audio System.
 
 # Adding the package to your project
