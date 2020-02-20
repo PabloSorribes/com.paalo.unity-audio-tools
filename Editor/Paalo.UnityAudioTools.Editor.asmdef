@@ -1,7 +1,7 @@
 {
     "name": "Paalo.UnityAudioTools.Editor",
     "references": [
-        "GUID:5ae10aa3990542440a16c579225cbe3d"
+        "GUID:e2f2b307822447648be64fabd0105b16"
     ],
     "includePlatforms": [
         "Editor"
