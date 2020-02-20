@@ -7,18 +7,35 @@ namespace Paalo.UnityAudioTools.Editor
 {
 	public class AudioVolumeConverterTool : EditorWindow
 	{
-		private const string menuItemPath = "Window/PabloSorribes/Tools/Audio Volume Converter Tool";
-		private static readonly string windowTitle = "Audio Volume Converter Tool";
+		#region ToolName and SetupWindow
+		private const int menuIndexPosition = -100;     //To make the menu be at the top of the GameObject-menu and the first option in the hierarchy.
+		private const string baseMenuPath = "Paalo/";
+		private const string rightClickMenuPath = "GameObject/" + baseMenuPath + toolName;
+		private const string toolsMenuPath = "Window/" + baseMenuPath + toolName;
+		private const string toolName = "Audio Volume Converter Tool";
 
-		[MenuItem(menuItemPath)]
+		[MenuItem(rightClickMenuPath, false, menuIndexPosition)]
+		public static void RightClickMenu()
+		{
+			SetupWindow();
+		}
+
+		[MenuItem(toolsMenuPath, false, menuIndexPosition)]
+		public static void ToolsMenu()
+		{
+			SetupWindow();
+		}
+
 		public static void SetupWindow()
 		{
 			//Instantiate the window and set its size.
-			var window = GetWindow<AudioVolumeConverterTool>(utility: false, title: windowTitle, focus: true);
+			var window = GetWindow<AudioVolumeConverterTool>(utility: false, title: toolName, focus: true);
 			window.minSize = new Vector2(400, 65);
 			window.maxSize = new Vector2(window.minSize.x + 10, window.minSize.y + 10);
 			window.Show();
 		}
+		#endregion ToolName and SetupWindow
+
 
 		public void OnEnable()
 		{
