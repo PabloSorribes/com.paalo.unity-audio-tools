@@ -5,12 +5,12 @@ namespace Paalo.UnityAudioTools
 {
 	public class AudioLoadingHelper : MonoBehaviour
 	{
-		private void LoadAudioExample(AudioClip audioClip, System.Action OnLoadedAction = null)
+		public void LoadAudio(AudioClip audioClip, System.Action OnLoadedAction = null)
 		{
 			StartCoroutine(LoadAudioDataCoroutine(audioClip, OnLoadedAction));
 		}
 
-		public IEnumerator LoadAudioDataCoroutine(AudioClip audioClip, System.Action OnLoadedAction = null)
+		private IEnumerator LoadAudioDataCoroutine(AudioClip audioClip, System.Action OnLoadedAction = null)
 		{
 			//Clip is null, exiting early
 			if (audioClip == null)
