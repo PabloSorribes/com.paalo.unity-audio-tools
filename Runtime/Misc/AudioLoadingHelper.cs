@@ -7,7 +7,7 @@ namespace Paalo.UnityAudioTools
 	{
 		//If-def for testing purposes
 #if UNITY_EDITOR
-		[SerializeField] AudioClip[] audioClips;
+		[SerializeField] AudioClip[] audioClips = default;
 
 		private void Update()
 		{
