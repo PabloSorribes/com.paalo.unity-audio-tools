@@ -51,11 +51,11 @@ namespace Paalo.UnityAudioTools.Editor
 			UnityEditor.UIElements.FloatField amplitudeField = new UnityEditor.UIElements.FloatField("Normalized Value (0-1)");
 			root.Add(amplitudeField);
 
-			amplitudeField.value = AudioVolumeConverter.ConvertDecibelVolumeToLinearVolume(decibelField.value, performanceToggle.value);
+			amplitudeField.value = AudioValuesConverter.ConvertDecibelVolumeToLinearVolume(decibelField.value, performanceToggle.value);
 
 			decibelField.RegisterCallback<ChangeEvent<float>>(evt =>
 			{
-				amplitudeField.value = AudioVolumeConverter.ConvertDecibelVolumeToLinearVolume(decibelField.value, performanceToggle.value);
+				amplitudeField.value = AudioValuesConverter.ConvertDecibelVolumeToLinearVolume(decibelField.value, performanceToggle.value);
 				amplitudeField.value = Mathf.Clamp01(amplitudeField.value);
 				decibelField.value = Mathf.Clamp(decibelField.value, -80f, 0f);
 			});
@@ -63,7 +63,7 @@ namespace Paalo.UnityAudioTools.Editor
 
 			amplitudeField.RegisterCallback<ChangeEvent<float>>(evt =>
 			{
-				decibelField.value = AudioVolumeConverter.ConvertLinearVolumeToDecibelVolume(amplitudeField.value, performanceToggle.value);
+				decibelField.value = AudioValuesConverter.ConvertLinearVolumeToDecibelVolume(amplitudeField.value, performanceToggle.value);
 				decibelField.value = Mathf.Clamp(decibelField.value, -80f, 0f);
 				amplitudeField.value = Mathf.Clamp01(amplitudeField.value);
 			});
